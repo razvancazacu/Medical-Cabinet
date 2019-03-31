@@ -13,7 +13,6 @@ public class UserService {
     }
 
     public boolean isAuth(Authenticable authenticable) {
-        final boolean medical_room = authenticable.getHashPassword().equals("Medical Room");
-        return medical_room;
+        return authenticable.getToken().equals("Medical Room");
     }
 }

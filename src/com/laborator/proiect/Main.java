@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        boolean auth = UserService.getInstance().isAuth(new Patient());
+        System.out.println(UserService.getInstance().isAuth(new Patient()));
 
     }
 }

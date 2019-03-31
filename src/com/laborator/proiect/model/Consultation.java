@@ -7,6 +7,7 @@ import com.laborator.proiect.receipit.ReceiptImplement;
 import java.util.Date;
 
 public class Consultation {
+    private Integer consulationID;
     private Patient patient;
     private Medic medic;
     private Date date;
@@ -42,5 +43,13 @@ public class Consultation {
 
     public void setReceiptImplement(ReceiptImplement receiptImplement) {
         this.receiptImplement = receiptImplement;
+    }
+
+    public Integer getConsulationID() {
+        return consulationID;
+    }
+
+    public void setConsulationID(Integer consulationID) {
+        this.consulationID = consulationID;
     }
 }

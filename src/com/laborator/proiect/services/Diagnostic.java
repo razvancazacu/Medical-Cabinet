@@ -4,5 +4,5 @@ import com.laborator.proiect.model.Consultation;
 
 public interface Diagnostic {
 
-    void saveConsultation(Consultation consultation);
+    boolean saveConsultation(Consultation consultation);
 }

@@ -4,13 +4,13 @@ import com.laborator.proiect.model.User;
 import com.laborator.proiect.patient.PatientDetails;
 
 public class Medic extends User {
-    private PatientDetails medicDetails;
+    private MedicDetails medicDetails;
 
-    public PatientDetails getMedicDetails() {
+    public MedicDetails getMedicDetails() {
         return medicDetails;
     }
 
-    public void setMedicDetails(PatientDetails patientDetails) {
-        this.medicDetails = patientDetails;
+    public void setMedicDetails(MedicDetails medicDetails) {
+        this.medicDetails = medicDetails;
     }
 }

@@ -1,21 +1,44 @@
 package com.laborator.proiect.medic;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class MedicDetails {
+    private static Integer currentMedicID = 0;
+
     private Integer medicId;
     private String address;
-    private Date dateOfBirth;
+    private LocalDate dateOfBirth;
     private String cnp;
     private String telephone;
     private String email;
+    private String firstName;
+    private String lastName;
     private String medicalField;
 
-    public MedicDetails(Integer medicId, String address, Date dateOfBirth,
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("MedicDetails{");
+        sb.append("medicId=").append(medicId);
+        sb.append(", address='").append(address).append('\'');
+        sb.append(", dateOfBirth=").append(dateOfBirth);
+        sb.append(", cnp='").append(cnp).append('\'');
+        sb.append(", telephone='").append(telephone).append('\'');
+        sb.append(", email='").append(email).append('\'');
+        sb.append(", firstName='").append(firstName).append('\'');
+        sb.append(", lastName='").append(lastName).append('\'');
+        sb.append(", medicalField='").append(medicalField).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
+
+    public MedicDetails(String firstName, String lastName, String address, LocalDate dateOfBirth,
                         String cnp, String telephone,
                         String email, String medicalField) {
-        this.medicId = medicId;
+        this.medicId = ++currentMedicID;
         this.address = address;
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
         this.cnp = cnp;
         this.telephone = telephone;
@@ -39,11 +62,11 @@ public class MedicDetails {
         this.address = address;
     }
 
-    public Date getDateOfBirth() {
+    public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 

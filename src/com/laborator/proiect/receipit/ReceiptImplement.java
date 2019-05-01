@@ -4,13 +4,14 @@ package com.laborator.proiect.receipit;
 import com.laborator.proiect.model.Medicine;
 import com.laborator.proiect.receipit.Receipt;
 
+import java.util.ArrayList;
+
 public class ReceiptImplement implements Receipt {
-    private Medicine medicine;
-    private Double numberOfPices;
+    private ArrayList<Medicine> medicine = new ArrayList<>();
     private String medicalPrescription;
 
     @Override
-    public Medicine getMedicine() {
+    public ArrayList<Medicine> getMedicine() {
         return this.medicine;
     }
 
@@ -20,7 +21,19 @@ public class ReceiptImplement implements Receipt {
     }
 
     @Override
-    public Double getNumberOfPieces() {
-        return this.numberOfPices;
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("ReceiptImplement{");
+        sb.append("medicine=").append(medicine);
+        sb.append(", medicalPrescription='").append(medicalPrescription).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
+
+    public void setMedicine(ArrayList<Medicine> medicine) {
+        this.medicine = medicine;
+    }
+
+    public void setMedicalPrescription(String medicalPrescription) {
+        this.medicalPrescription = medicalPrescription;
     }
 }

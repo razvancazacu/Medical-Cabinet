@@ -1,14 +1,15 @@
 package com.laborator.proiect.model;
 
 public class Medicine {
+    private static long medicineId =0;
     private String name;
     private String prescription;
-    private Double price;
+    private long id;
 
-    public Medicine(String name, String prescription, Double price) {
+    public Medicine(String name, String prescription) {
         this.name = name;
         this.prescription = prescription;
-        this.price = price;
+        this.id = ++medicineId;
     }
 
     public String getName() {
@@ -27,13 +28,17 @@ public class Medicine {
         this.prescription = prescription;
     }
 
-    public Double getPrice() {
-        return price;
+    public long getId() {
+        return id;
     }
 
-    public void setPrice(Double price) {
-        this.price = price;
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Medicine{");
+        sb.append("name='").append(name).append('\'');
+        sb.append(", prescription='").append(prescription).append('\'');
+        sb.append(", id=").append(id);
+        sb.append('}');
+        return sb.toString();
     }
-
-
 }

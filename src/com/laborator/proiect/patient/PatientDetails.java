@@ -1,9 +1,10 @@
 package com.laborator.proiect.patient;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Date;
 
-public class PatientDetails {
+public class PatientDetails implements Serializable {
     private static Integer currentPatientID = 0;
     private Integer patientId;
     private String address;

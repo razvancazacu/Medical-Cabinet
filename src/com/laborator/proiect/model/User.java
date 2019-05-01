@@ -2,10 +2,11 @@ package com.laborator.proiect.model;
 
 import com.laborator.proiect.auth.Authenticable;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.Scanner;
 
-public class User implements Authenticable, Comparable<User> {
+public class User implements Authenticable, Comparable<User>, Serializable {
 
     private String userName;
     private String hashPassword;

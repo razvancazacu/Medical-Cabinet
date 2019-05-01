@@ -1,9 +1,10 @@
 package com.laborator.proiect.medic;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Date;
 
-public class MedicDetails {
+public class MedicDetails implements Serializable {
     private static Integer currentMedicID = 0;
 
     private Integer medicId;

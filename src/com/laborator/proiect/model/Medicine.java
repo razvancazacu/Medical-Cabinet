@@ -1,6 +1,8 @@
 package com.laborator.proiect.model;
 
-public class Medicine {
+import java.io.Serializable;
+
+public class Medicine implements Serializable {
     private static long medicineId =0;
     private String name;
     private String prescription;

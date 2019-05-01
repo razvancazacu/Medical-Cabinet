@@ -4,10 +4,11 @@ import com.laborator.proiect.medic.Medic;
 import com.laborator.proiect.patient.Patient;
 import com.laborator.proiect.receipit.ReceiptImplement;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Date;
 
-public class Consultation {
+public class Consultation implements Serializable {
     private static Integer consultationNrId = 0;
     private Integer consultationID;
     private long patientId;
@@ -51,7 +52,7 @@ public class Consultation {
 
 
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 

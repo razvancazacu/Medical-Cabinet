@@ -2,15 +2,17 @@ package com.laborator.proiect.patient;
 
 import com.laborator.proiect.model.Consultation;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
-public class MedicalFile {
+public class MedicalFile implements Serializable {
     private static long medicalFileId = 0;
 
     private long id;
     private long patientId;
 
-    List<Consultation> consultationsList;
+    List<Consultation> consultationsList = new ArrayList<>();
 
     public long getPatientId() {
         return patientId;
@@ -25,14 +27,14 @@ public class MedicalFile {
         this.patientId = patientId;
         this.consultationsList = consultationsList;
     }
-
+    public MedicalFile(long patientId) {
+        this.id = ++medicalFileId;
+        this.patientId = patientId;
+    }
     public long getId() {
         return id;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
 
     public List<Consultation> getConsultationsList() {
         return consultationsList;

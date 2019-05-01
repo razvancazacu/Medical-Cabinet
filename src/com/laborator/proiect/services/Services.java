@@ -130,6 +130,7 @@ public class Services {
 
     /**
      * Return all the patients that had the respective medic.
+     *
      * @param medic
      * @return
      */
@@ -162,5 +163,17 @@ public class Services {
         return null;
     }
 
+    public static void writeAllDataToCSV() {
+        FileService.getInstance().writeObjectToFile(patients, "./files/patients.csv");
+        FileService.getInstance().writeObjectToFile(medics, "./files/medics.csv");
+        FileService.getInstance().writeObjectToFile(medicines, "./files/medicines.csv");
 
+    }
+
+    public static void loadAllDataFromCSV() {
+        patients = (ArrayList<Patient>)FileService.getInstance().readObjectFromFile("./files/patients.csv");
+        medics = (ArrayList<Medic>)FileService.getInstance().readObjectFromFile("./files/medics.csv");
+        medicines = (ArrayList<Medicine>)FileService.getInstance().readObjectFromFile("./files/medicines.csv");
+
+    }
 }

@@ -6,7 +6,7 @@ import com.laborator.proiect.model.User;
 public class Patient extends User {
 
     private PatientDetails patientDetails;
-    private MedicalFile medicalFile;
+    private MedicalFile medicalFile ;
 
     public MedicalFile getMedicalFile() {
         return medicalFile;
@@ -20,9 +20,9 @@ public class Patient extends User {
         sb.append('}');
         return sb.toString();
     }
-
     public Patient(PatientDetails patientDetails) {
         this.patientDetails = patientDetails;
+        this.medicalFile = new MedicalFile(this.patientDetails.getPatientId());
     }
 
     public void setMedicalFile(MedicalFile medicalFile) {

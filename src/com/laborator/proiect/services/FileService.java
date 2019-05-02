@@ -1,6 +1,10 @@
 package com.laborator.proiect.services;
 
+import com.laborator.proiect.model.Medicine;
+
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FileService {
     private static FileService ourInstance = new FileService();
@@ -12,10 +16,6 @@ public class FileService {
     private FileService() {
     }
 
-    /**
-     * @param object
-     * @param fileNamePath
-     */
     public void writeObjectToFile(Object object, String fileNamePath) {
 
         try {
@@ -27,20 +27,12 @@ public class FileService {
             objectOutputStream.flush();
             objectOutputStream.close();
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
     }
 
-    /**
-     * read an object from a file
-     *
-     * @param fileNamePath
-     * @return
-     */
     public Object readObjectFromFile(String fileNamePath) {
         Object object = null;
 
@@ -50,11 +42,7 @@ public class FileService {
 
             object = objectInputStream.readObject();
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+        } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
 

@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="183085e3-1eb4-4b09-bef4-5c8ca5fa7579" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/laborator/proiect/services/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/laborator/proiect/services/FileAuditTextService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/model/Consultation$DiagType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/model/Consultation$DiagType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/model/Consultation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/model/Consultation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/model/Medicine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/model/Medicine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/patient/MedicalFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/patient/MedicalFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/patient/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/patient/Patient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/receipit/Receipt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/receipit/Receipt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/receipit/ReceiptImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/receipit/ReceiptImplement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/services/Services$UserType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/services/Services$UserType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/services/FileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/services/FileService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/services/Services.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Proiect/com/laborator/proiect/services/Services.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/laborator/proiect/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/laborator/proiect/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/laborator/proiect/medic/MedicDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/laborator/proiect/medic/MedicDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/laborator/proiect/model/Consultation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/laborator/proiect/model/Consultation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/laborator/proiect/model/Medicine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/laborator/proiect/model/Medicine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/laborator/proiect/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/laborator/proiect/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/laborator/proiect/patient/MedicalFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/laborator/proiect/patient/MedicalFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/laborator/proiect/patient/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/laborator/proiect/patient/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/laborator/proiect/patient/PatientDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/laborator/proiect/patient/PatientDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/laborator/proiect/services/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/laborator/proiect/services/FileService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/laborator/proiect/services/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/laborator/proiect/services/Services.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,42 +19,60 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/services/Services.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="175" column="39" selection-start-line="175" selection-start-column="39" selection-end-line="175" selection-end-column="39" />
+            <state relative-caret-position="2022">
+              <caret line="212" column="112" selection-start-line="212" selection-start-column="112" selection-end-line="212" selection-end-column="112" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1605#1606#0" expanded="true" />
-                <element signature="e#1632#1633#0" expanded="true" />
-                <element signature="e#1693#1694#0" expanded="true" />
-                <element signature="e#1720#1721#0" expanded="true" />
-                <element signature="e#1777#1778#0" expanded="true" />
-                <element signature="e#1816#1817#0" expanded="true" />
-                <element signature="e#3249#3250#0" expanded="true" />
-                <element signature="e#3277#3278#0" expanded="true" />
-                <element signature="e#3327#3328#0" expanded="true" />
-                <element signature="e#3356#3357#0" expanded="true" />
-                <element signature="e#3410#3411#0" expanded="true" />
-                <element signature="e#3441#3442#0" expanded="true" />
-                <element signature="e#3497#3498#0" expanded="true" />
-                <element signature="e#3529#3530#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/files/audit.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/services/FileAuditTextService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1349">
-              <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
+            <state relative-caret-position="-220">
+              <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/model/Consultation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+              <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#358#359#0" expanded="true" />
@@ -102,29 +107,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/services/FileService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="-144">
+              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/files/medics.csv">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/patient/MedicalFile.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="48" />
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#264#265#0" expanded="true" />
-                <element signature="e#296#297#0" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
-                <element signature="e#386#387#0" expanded="true" />
-                <element signature="e#229#230#0" expanded="true" />
-                <element signature="e#254#255#0" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#912#913#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,7 +136,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/medic/MedicDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
+            <state relative-caret-position="76">
               <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -179,15 +182,16 @@
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/receipit/ReceiptImplement.java" />
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/receipit/Receipt.java" />
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/patient/Patient.java" />
-        <option value="$PROJECT_DIR$/src/com/laborator/proiect/services/FileService.java" />
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/patient/MedicalFile.java" />
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/model/Medicine.java" />
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/model/Consultation.java" />
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/patient/PatientDetails.java" />
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/medic/MedicDetails.java" />
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/model/User.java" />
-        <option value="$PROJECT_DIR$/src/com/laborator/proiect/services/Services.java" />
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/laborator/proiect/services/FileService.java" />
+        <option value="$PROJECT_DIR$/src/com/laborator/proiect/services/FileAuditTextService.java" />
+        <option value="$PROJECT_DIR$/src/com/laborator/proiect/services/Services.java" />
       </list>
     </option>
   </component>
@@ -197,9 +201,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2964" />
-    <option name="y" value="-513" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-521" />
     <option name="width" value="883" />
     <option name="height" value="1087" />
   </component>
@@ -211,8 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -309,6 +311,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,18 +371,19 @@
       <workItem from="1554060451278" duration="7702000" />
       <workItem from="1554103148671" duration="8177000" />
       <workItem from="1556740433181" duration="890000" />
-      <workItem from="1556741770535" duration="11210000" />
+      <workItem from="1556741770535" duration="11330000" />
+      <workItem from="1556799510797" duration="3747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34697000" />
+    <option name="totallyTimeSpent" value="38564000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2964" y="-513" width="883" height="1087" extended-state="0" />
+    <frame x="1912" y="-521" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2891859" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13006397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -386,8 +391,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3312369" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33021808" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -503,23 +508,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/services/Diagnostic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/services/DiagnosticService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="72" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/services/Diagnostic.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/services/DiagnosticService.java" />
     <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/medic/Medic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -573,26 +563,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/model/Consultation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/patient/PatientDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1153">
@@ -610,36 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/medic/MedicDetails.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/patient/MedicalFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/files/patients.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -653,20 +593,53 @@
     <entry file="file://$PROJECT_DIR$/files/medicines.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/medic/MedicDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/services/FileAuditTextService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/patient/MedicalFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/files/medics.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/services/FileService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="-144">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#358#359#0" expanded="true" />
@@ -685,37 +658,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/services/Services.java">
+    <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/model/Consultation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="175" column="39" selection-start-line="175" selection-start-column="39" selection-end-line="175" selection-end-column="39" />
+        <state relative-caret-position="114">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1632#1633#0" expanded="true" />
-            <element signature="e#1693#1694#0" expanded="true" />
-            <element signature="e#1720#1721#0" expanded="true" />
-            <element signature="e#1777#1778#0" expanded="true" />
-            <element signature="e#1816#1817#0" expanded="true" />
-            <element signature="e#3249#3250#0" expanded="true" />
-            <element signature="e#3277#3278#0" expanded="true" />
-            <element signature="e#3327#3328#0" expanded="true" />
-            <element signature="e#3356#3357#0" expanded="true" />
-            <element signature="e#3410#3411#0" expanded="true" />
-            <element signature="e#3441#3442#0" expanded="true" />
-            <element signature="e#3497#3498#0" expanded="true" />
-            <element signature="e#3529#3530#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1349">
-          <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
+        <state relative-caret-position="-220">
+          <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/services/Services.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2022">
+          <caret line="212" column="112" selection-start-line="212" selection-start-column="112" selection-end-line="212" selection-end-column="112" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/audit.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
         </state>
       </provider>
     </entry>

@@ -72,7 +72,7 @@ public class Main {
 //        System.out.println("patient1:" + patient1);
 //        Services.writeAllDataToCSV();
         Patient patient = (Patient) Services.getUser("usernamePatient");
-        System.out.println(patient);
+        System.out.println(Services.getMedicine("Aspirina"));
     /*    Scanner scanner = new Scanner(System.in);
         Patient patient = new Patient();
 

@@ -7,7 +7,10 @@ import com.laborator.proiect.model.User;
 import com.laborator.proiect.patient.Patient;
 
 import java.sql.Timestamp;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.PriorityQueue;
 
 public class Services {
     private static Services ourInstance = new Services();
@@ -20,6 +23,10 @@ public class Services {
     private static ArrayList<Medic> medics = new ArrayList<>();
     private static ArrayList<Patient> patients = new ArrayList<>();
     private static ArrayList<Medicine> medicines = new ArrayList<>();
+
+    private static PriorityQueue<Consultation> consultationPriorityQueue = new PriorityQueue<>();
+    private static HashMap<LocalDate, Patient> consultationsDone = new HashMap<>();
+
 
 
     private Services() {

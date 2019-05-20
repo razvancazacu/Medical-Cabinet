@@ -3,6 +3,7 @@ package com.laborator.proiect.model;
 public class Clinic {
     private static long clinicId = 0;
     private long id;
+    private String name;
     private String country;
     private String state;
     private String city;
@@ -67,7 +68,9 @@ public class Clinic {
     private String streetName;
     private String streetNr;
 
-    public Clinic(String country, String state, String city, String streetName, String streetNr) {
+    public Clinic(String country, String state, String city, String streetName, String streetNr, String name) {
+
+        this.name = name;
         this.id = ++clinicId;
         this.country = country;
         this.state = state;

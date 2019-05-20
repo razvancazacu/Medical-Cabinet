@@ -26,7 +26,7 @@ public class Main {
     public static void main(String[] args) throws IOException, SQLException {
         Services services = Services.getInstance();
         Services.loadAllDataFromCSV();
-
+//
 //        Services.addMedic(new Medic(new MedicDetails("Radu", "Radulescu",
 //                "Bucharest",
 //                LocalDate.parse("1970-03-12"),
@@ -49,8 +49,8 @@ public class Main {
 //                "Ton",
 //                "Huiaz"
 //        )), "usernamePatient", "password");
-//        System.out.println(Services.getUser("usernamePatient"));
-//
+        System.out.println(Services.getUser("usernamePatient"));
+////        System.out.println(Services.getUserPatient(1));
 //        Services.addMedicine(new Medicine("Aspirina", "Nu utilizaţi ASPIRIN:\n" +
 //                "\uF0B7 dacă sunteţi alergic la acidul acetilsalicilic sau la alţi salicilaţi sau la oricare dintre componentele\n" +
 //                "acestui medicament (enumerate la pct. 6).\n" +
@@ -60,19 +60,18 @@ public class Main {
 //                "\uF0B7 dacă aveţi ulcer gastric sau intestinal (inclusiv ulcer duodenal).\n" +
 //                "\uF0B7 dacă aveţi o afecţiune hemoragică sau un risc de sângerare.\n" +
 //                "\uF0B7 dacă aveţi insuficienţă renală, insuficienţă hepatică sau insuficienţă cardiacă severă. "));
-//
-//        Objects.requireNonNull(patient).getMedicalFile().addConsultation(
-//                new Consultation(1, 1, LocalDate.parse("2019-05-12")
-//                ));
-//        Services.getPatientsFromMedic((Medic) Services.getUser("usernameMedic"));
-//
+
+        Patient patient = (Patient) Services.getUser("usernamePatient");
+        Objects.requireNonNull(patient).getMedicalFile().addConsultation(
+                new Consultation(1, 1, LocalDate.parse("2019-05-12")
+                ));
+//        System.out.println(Services.getPatientsFromMedic((Medic) Services.getUser("usernameMedic")));
+
 //        FileService.getInstance().writeObjectToFile(patient, "./files/patient.csv");
 //        Patient patient1 = (Patient)FileService.getInstance().readObjectFromFile("./files/patient.csv");
 //        System.out.println("patient:" + patient);
 //        System.out.println("patient1:" + patient1);
-//        Services.writeAllDataToCSV();
-        Patient patient = (Patient) Services.getUser("usernamePatient");
-        System.out.println(Services.getMedicine("Aspirina"));
+//        System.out.println(Services.getMedicine("Aspirina"));
     /*    Scanner scanner = new Scanner(System.in);
         Patient patient = new Patient();
 
@@ -95,5 +94,6 @@ public class Main {
                 "lorem@email.com",
                 "John");
     }*/
+        Services.writeAllDataToCSV();
     }
 }

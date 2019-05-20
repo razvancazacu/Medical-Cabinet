@@ -6,6 +6,7 @@ import com.laborator.proiect.model.Medicine;
 import com.laborator.proiect.model.User;
 import com.laborator.proiect.patient.Patient;
 
+import java.sql.SQLOutput;
 import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -26,7 +27,6 @@ public class Services {
 
     private static PriorityQueue<Consultation> consultationPriorityQueue = new PriorityQueue<>();
     private static HashMap<LocalDate, Patient> consultationsDone = new HashMap<>();
-
 
 
     private Services() {
@@ -65,30 +65,47 @@ public class Services {
         return null;
     }
 
-    public static void addPatient(Patient patient, String username, String password) {
+    public static boolean addPatient(Patient patient, String username, String password) {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(new Object(){}.getClass().getEnclosingMethod().getName()).append(",").append(new Timestamp(System.currentTimeMillis()));
+        stringBuilder.append(new Object() {
+        }.getClass().getEnclosingMethod().getName()).append(",").append(new Timestamp(System.currentTimeMillis()));
         writeToAudit(stringBuilder);
-        if (checkUsernameAvailable(username) && checkPassword(password)) {
-            patient.setUserName(username);
-            patient.setHashPassword(password);
-            patients.add(patient);
+
+        if (checkUsernameAvailable(username)) {
+            if (checkPassword(password)) {
+                patient.setUserName(username);
+                patient.setHashPassword(password);
+                patients.add(patient);
+                return true;
+            } else {
+                System.out.println("INVALID PASSWORD");
+            }
         } else {
             // Invalid username or password
+            System.out.println("INVALID USERNAME");
         }
+        return false;
     }
 
-    public static void addMedic(Medic medic, String username, String password) {
-        if (checkUsernameAvailable(username) && checkPassword(password)) {
-            medic.setUserName(username);
-            medic.setHashPassword(password);
-            medics.add(medic);
-        } else {
-            // Invalid username or password
-        }
+    public static boolean addMedic(Medic medic, String username, String password) {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(new Object(){}.getClass().getEnclosingMethod().getName()).append(",").append(new Timestamp(System.currentTimeMillis()));
+        stringBuilder.append(new Object() {
+        }.getClass().getEnclosingMethod().getName()).append(",").append(new Timestamp(System.currentTimeMillis()));
         writeToAudit(stringBuilder);
+        if (checkUsernameAvailable(username)) {
+            if (checkPassword(password)) {
+                medic.setUserName(username);
+                medic.setHashPassword(password);
+                medics.add(medic);
+                return true;
+            } else {
+                System.out.println("INVALID PASSWORD");
+                return false;
+            }
+        } else {
+            System.out.println("INVALID USERNAME");
+            return false;
+        }
     }
 
     /**
@@ -101,7 +118,7 @@ public class Services {
         if (password.length() <= 6) {
             return false; // Password too short.
         } else for (int i = 0; i < password.length(); i++) {
-            if (!Character.isWhitespace(password.charAt(i))) {
+            if (Character.isWhitespace(password.charAt(i))) {
                 return false; // Password has whitespace.
             }
         }
@@ -118,32 +135,37 @@ public class Services {
         if (username.length() <= 6) {
             return false; // Username too short.
         } else {
-            for (Patient patient : patients
-            ) {
-                if (patient.getUserName().equals(username)) {
-                    return false; // Username already added for patient.
+            if (!patients.isEmpty()) {
+                for (Patient patient : patients
+                ) {
+                    if (patient.getUserName().equals(username)) {
+                        return false; // Username already added for patient.
+                    }
+                }
+                for (Medic medic : medics
+                ) {
+                    if (medic.getUserName().equals(username)) {
+                        return false; // Username already added for patient.
+                    }
                 }
             }
-            for (Medic medic : medics
-            ) {
-                if (medic.getUserName().equals(username)) {
-                    return false; // Username already added for patient.
-                }
-            }
+
         }
         return true;
     }
 
     public static void addMedicine(Medicine medicine) {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(new Object(){}.getClass().getEnclosingMethod().getName()).append(",").append(new Timestamp(System.currentTimeMillis()));
+        stringBuilder.append(new Object() {
+        }.getClass().getEnclosingMethod().getName()).append(",").append(new Timestamp(System.currentTimeMillis()));
         writeToAudit(stringBuilder);
         medicines.add(medicine);
     }
 
     public static User getUser(String username) {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(new Object(){}.getClass().getEnclosingMethod().getName()).append(",").append(new Timestamp(System.currentTimeMillis()));
+        stringBuilder.append(new Object() {
+        }.getClass().getEnclosingMethod().getName()).append(",").append(new Timestamp(System.currentTimeMillis()));
         writeToAudit(stringBuilder);
         for (User user : patients) {
             if (user.getUserName().equals(username)) {
@@ -159,17 +181,30 @@ public class Services {
         return null;
     }
 
-    public static User getUser(Integer userId) {
+    public static User getUserMedic(Integer userId) {
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(new Object(){}.getClass().getEnclosingMethod().getName()).append(",").append(new Timestamp(System.currentTimeMillis()));
+        stringBuilder.append(new Object() {
+        }.getClass().getEnclosingMethod().getName()).append(",").append(new Timestamp(System.currentTimeMillis()));
         writeToAudit(stringBuilder);
-        for (User user : users) {
+        for (Medic user : medics) {
             if (Medic.class == user.getClass()) {
-                if (((Medic) user).getMedicDetails().getMedicId().equals(userId)) {
+                if (user.getMedicDetails().getMedicId().equals(userId)) {
                     return user;
                 }
-            } else if (Patient.class == user.getClass()) {
-                if (((Patient) user).getPatientDetails().getPatientId().equals(userId)) {
+            }
+        }
+        System.out.println("User not found\n");
+        return null;
+    }
+
+    public static Patient getUserPatient(Integer userId) {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(new Object() {
+        }.getClass().getEnclosingMethod().getName()).append(",").append(new Timestamp(System.currentTimeMillis()));
+        writeToAudit(stringBuilder);
+        for (Patient user : patients) {
+            if (Patient.class == user.getClass()) {
+                if (user.getPatientDetails().getPatientId().equals(userId)) {
                     return user;
                 }
             }
@@ -199,7 +234,8 @@ public class Services {
             }
         }
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(new Object(){}.getClass().getEnclosingMethod().getName()).append(",").append(new Timestamp(System.currentTimeMillis()));
+        stringBuilder.append(new Object() {
+        }.getClass().getEnclosingMethod().getName()).append(",").append(new Timestamp(System.currentTimeMillis()));
         writeToAudit(stringBuilder);
         return tempPatientList;
     }
@@ -210,7 +246,8 @@ public class Services {
         FileService.getInstance().writeObjectToFile(medics, "./files/medics.csv");
         FileService.getInstance().writeObjectToFile(medicines, "./files/medicines.csv");
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append(new Object(){}.getClass().getEnclosingMethod().getName()).append(",").append(new Timestamp(System.currentTimeMillis()));
+        stringBuilder.append(new Object() {
+        }.getClass().getEnclosingMethod().getName()).append(",").append(new Timestamp(System.currentTimeMillis()));
         writeToAudit(stringBuilder);
     }
 

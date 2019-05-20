@@ -10,6 +10,17 @@ public class User implements Authenticable, Comparable<User>, Serializable {
 
     private String userName;
     private String hashPassword;
+    private Clinic clinic;
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("User{");
+        sb.append("userName='").append(userName).append('\'');
+        sb.append(", clinic=").append(clinic);
+        sb.append('}');
+        return sb.toString();
+    }
+
 
     @Override
     public String getHashPassword() {
@@ -24,13 +35,6 @@ public class User implements Authenticable, Comparable<User>, Serializable {
     @Override
     public String getUserName() {
         return userName;
-    }
-
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("User{");
-        sb.append('}');
-        return sb.toString();
     }
 
     public void setUserName(String userName) {

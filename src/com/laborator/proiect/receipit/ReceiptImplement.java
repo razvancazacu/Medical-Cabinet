@@ -7,8 +7,10 @@ import com.laborator.proiect.receipit.Receipt;
 import java.util.ArrayList;
 
 public class ReceiptImplement implements Receipt {
+    private Integer receiptId ;
     private ArrayList<Medicine> medicine = new ArrayList<>();
     private String medicalPrescription;
+    private Integer issuedByMedic ;
 
     @Override
     public ArrayList<Medicine> getMedicine() {
@@ -25,6 +27,7 @@ public class ReceiptImplement implements Receipt {
         final StringBuilder sb = new StringBuilder("ReceiptImplement{");
         sb.append("medicine=").append(medicine);
         sb.append(", medicalPrescription='").append(medicalPrescription).append('\'');
+        sb.append(", issuedByMedic='").append(issuedByMedic).append('\'');
         sb.append('}');
         return sb.toString();
     }
@@ -33,7 +36,8 @@ public class ReceiptImplement implements Receipt {
         this.medicine = medicine;
     }
 
-    public void setMedicalPrescription(String medicalPrescription) {
+    public void setMedicalPrescription(String medicalPrescription, int medicId) {
         this.medicalPrescription = medicalPrescription;
+        issuedByMedic = medicId;
     }
 }

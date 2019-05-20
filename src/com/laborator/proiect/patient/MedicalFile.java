@@ -12,7 +12,7 @@ public class MedicalFile implements Serializable {
     private long id;
     private long patientId;
 
-    List<Consultation> consultationsList = new ArrayList<>();
+    private List<Consultation> consultationsList = new ArrayList<>();
 
     public long getPatientId() {
         return patientId;

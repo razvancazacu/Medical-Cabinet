@@ -1,6 +1,7 @@
 package com.laborator.proiect.GUI;
 
 import com.laborator.proiect.DataBase.DataBase;
+import com.laborator.proiect.model.CurrentUser;
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -138,9 +139,11 @@ public class Login extends JFrame {
 
             if (resultSet.next()) {
                 String acc_type = resultSet.getString("account_type");
+
+                CurrentUser currentUser = new CurrentUser(acc_type, username);
                 JFrame frameMenu = new JFrame("Menu");
                 try {
-                    frameMenu.setContentPane(new Menu(username, acc_type).getMenuPanel());
+                    frameMenu.setContentPane(new Menu(currentUser).getMenuPanel());
                 } catch (ClassNotFoundException ex) {
                     ex.printStackTrace();
                 }

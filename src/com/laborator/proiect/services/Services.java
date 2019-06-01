@@ -130,6 +130,7 @@ public class Services {
      *
      * @param username
      * @return
+     * Implemented into GUI Register
      */
     private static boolean checkUsernameAvailable(String username) {
         if (username.length() <= 6) {

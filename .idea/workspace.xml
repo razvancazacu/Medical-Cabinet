@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="183085e3-1eb4-4b09-bef4-5c8ca5fa7579" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/laborator/proiect/model/CurrentUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/audit.csv" beforeDir="false" afterPath="$PROJECT_DIR$/files/audit.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/DataBase.sql" beforeDir="false" afterPath="$PROJECT_DIR$/resources/DataBase.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/laborator/proiect/GUI/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/laborator/proiect/GUI/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/laborator/proiect/GUI/Menu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/laborator/proiect/GUI/Menu.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/laborator/proiect/GUI/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/laborator/proiect/GUI/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/laborator/proiect/services/Services.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/laborator/proiect/services/Services.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,15 +17,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/GUI/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="58" column="59" lean-forward="true" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+            <state relative-caret-position="-11">
+              <caret line="267" lean-forward="true" selection-start-line="267" selection-end-line="267" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2986#13152#0" expanded="true" />
-                <element signature="e#13151#13152#0" expanded="true" />
+                <element signature="e#15511#15512#0" expanded="true" />
                 <element signature="e#15543#15544#0" expanded="true" />
               </folding>
             </state>
@@ -39,6 +32,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/DataBase.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/GUI/Menu.form">
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
@@ -46,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/services/Services.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2641">
-              <caret line="149" column="21" lean-forward="true" selection-start-line="149" selection-start-column="21" selection-end-line="149" selection-end-column="21" />
+            <state relative-caret-position="877">
+              <caret line="149" column="21" selection-start-line="149" selection-start-column="21" selection-end-line="149" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,11 +113,11 @@
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/DataBase/DatabaseServices.java" />
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/DataBase/DataBase.java" />
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/model/CurrentUser.java" />
-        <option value="$PROJECT_DIR$/resources/DataBase.sql" />
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/GUI/Login.java" />
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/services/Services.java" />
-        <option value="$PROJECT_DIR$/src/com/laborator/proiect/GUI/Menu.form" />
         <option value="$PROJECT_DIR$/src/com/laborator/proiect/GUI/Menu.java" />
+        <option value="$PROJECT_DIR$/resources/DataBase.sql" />
+        <option value="$PROJECT_DIR$/src/com/laborator/proiect/GUI/Menu.form" />
       </list>
     </option>
   </component>
@@ -139,7 +141,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -150,21 +152,6 @@
             <path>
               <item name="Medical-Cabinet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="Proiect" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="files" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Medical-Cabinet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Proiect" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="libraries" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Medical-Cabinet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Proiect" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Medical-Cabinet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Proiect" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -187,24 +174,6 @@
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="laborator" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="proiect" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Medical-Cabinet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Proiect" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="laborator" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="proiect" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="auth" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Medical-Cabinet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Proiect" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="laborator" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="proiect" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="DataBase" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="Medical-Cabinet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -214,16 +183,6 @@
               <item name="laborator" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="proiect" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="GUI" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Medical-Cabinet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Proiect" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="laborator" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="proiect" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="GUI" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Login" type="e9f4de52:FormNode" />
             </path>
             <path>
               <item name="Medical-Cabinet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -235,56 +194,11 @@
               <item name="GUI" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="Menu" type="e9f4de52:FormNode" />
             </path>
-            <path>
-              <item name="Medical-Cabinet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Proiect" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="laborator" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="proiect" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="medic" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Medical-Cabinet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Proiect" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="laborator" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="proiect" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="model" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Medical-Cabinet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Proiect" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="laborator" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="proiect" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="patient" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Medical-Cabinet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Proiect" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="laborator" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="proiect" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="receipit" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Medical-Cabinet" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="Proiect" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="laborator" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="proiect" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="services" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -297,7 +211,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -406,11 +320,12 @@
       <workItem from="1558329102654" duration="2803000" />
       <workItem from="1559039675200" duration="2372000" />
       <workItem from="1559415521446" duration="9954000" />
+      <workItem from="1559468958661" duration="1248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82612000" />
+    <option name="totallyTimeSpent" value="83860000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -422,10 +337,10 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" weight="0.17643923" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.17643923" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32914045" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30010384" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30010384" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -520,38 +435,38 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/files/medics.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/files/medicines.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/files/patients.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/files/patient.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="92" selection-start-line="1" selection-start-column="92" selection-end-line="1" selection-end-column="92" />
+        </state>
+      </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="92" selection-start-line="1" selection-start-column="92" selection-end-line="1" selection-end-column="92" />
         </state>
       </provider>
     </entry>
@@ -582,17 +497,17 @@
     <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/LoginForm.java" />
     <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/LoginForm.form" />
     <entry file="file://$PROJECT_DIR$/files/audit.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+        </state>
+      </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider editor-type-id="text-editor">
         <state>
           <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -779,44 +694,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/DataBase.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/GUI/Login.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="jar://$PROJECT_DIR$/libraries/mysql-connector-java-8.0.16.jar!/com/mysql/cj/jdbc/exceptions/SQLError.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/DataBase.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="65" column="7" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/services/Services.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2641">
-          <caret line="149" column="21" lean-forward="true" selection-start-line="149" selection-start-column="21" selection-end-line="149" selection-end-column="21" />
+        <state relative-caret-position="877">
+          <caret line="149" column="21" selection-start-line="149" selection-start-column="21" selection-end-line="149" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/GUI/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="267" lean-forward="true" selection-start-line="267" selection-end-line="267" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#15511#15512#0" expanded="true" />
+            <element signature="e#15543#15544#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/GUI/Menu.form">
       <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/laborator/proiect/GUI/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="58" column="59" lean-forward="true" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2986#13152#0" expanded="true" />
-            <element signature="e#13151#13152#0" expanded="true" />
-            <element signature="e#15543#15544#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
   </component>
   <component name="masterDetails">

@@ -59,3 +59,58 @@ CREATE TABLE `users` (
                          PRIMARY KEY (`user_id`),
                          UNIQUE KEY `username_UNIQUE` (`username`)
 );
+INSERT INTO `users`
+(
+    `username`,
+    `password`,
+    `account_type`)
+VALUES(
+          "admin",
+          "admin",
+          "admin");
+INSERT INTO `users`
+(
+    `username`,
+    `password`,
+    `clinic_id`,
+    `account_type`)
+VALUES(
+          "patient",
+          "patient",
+          "2",
+          "patient");
+INSERT INTO `users`
+(
+    `username`,
+    `password`,
+    `clinic_id`,
+    `account_type`)
+VALUES(
+          "medic",
+          "medic",
+          "2",
+          "medic");
+INSERT INTO `clinic`
+(
+    `name`,
+    `country`,
+    `state`,
+    `city`)
+VALUES
+(
+    "Carol Davila",
+    "Romania",
+    "Bucharest",
+    "Bucharest");
+INSERT INTO `clinic`
+(
+    `name`,
+    `country`,
+    `state`,
+    `city`)
+VALUES
+(
+    "Alexandru Grigorescu",
+    "Romania",
+    "Bucharest",
+    "Bucharest");
